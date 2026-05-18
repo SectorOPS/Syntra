@@ -1,0 +1,81 @@
+;; WEBHOOK LOAD DECISION DEMO
+;;
+;; Sanitized aggregate from an internal webhook load export.
+;; No payloads, headers, tokens, IPs, customer names, or secrets are embedded.
+;;
+;; Dataset summary:
+;;   rows: 1,854,445
+;;   range: 2026-01-01 00:00:20 -> 2026-04-01 09:20:26
+;;   peak hour: 08:00, 276,404 webhooks
+;;
+;; The goal is not to replace the API gateway. It is to show the shape of
+;; Lycan as an adaptive decision layer under an existing application:
+;;
+;;   context -> choose capacity decision -> later feedback updates trust
+;;
+;; Here we use historical hourly volume as the correctness oracle and let
+;; three decision strategies compete:
+;;
+;;   exact_count_model: uses the observed hourly counts
+;;   compact_rule_model: a small hand-derived rule for the same pattern
+;;   naive_daytime_model: a broad daytime guess that is intentionally coarse
+
+($ hourly_counts
+  (A 45133 38779 41108 42042 52723 46288 61101 148341
+     276404 173904 113279 109913 91207 80131 74344 75875
+     71233 55187 45647 43746 42389 42262 41105 42304))
+
+(F capacity_from_count (count)
+  (? (> count 250000)
+    12
+    (? (> count 150000)
+      8
+      (? (> count 100000)
+        5
+        (? (> count 75000)
+          4
+          2)))))
+
+(F exact_count_model (hour)
+  (capacity_from_count (I hourly_counts hour)))
+
+(F compact_rule_model (hour)
+  (? (== hour 8)
+    12
+    (? (== hour 9)
+      8
+      (? (|| (|| (== hour 7) (== hour 10)) (== hour 11))
+        5
+        (? (|| (|| (== hour 12) (== hour 13)) (== hour 15))
+          4
+          2)))))
+
+(F naive_daytime_model (hour)
+  (? (&& (>= hour 7) (<= hour 17))
+    5
+    2))
+
+(F decide_capacity (hour)
+  (strategy
+    (exact_count_model hour)
+    (compact_rule_model hour)
+    (naive_daytime_model hour)))
+
+($! total_error 0)
+($! h 0)
+(W (< h 24)
+  ($ expected (exact_count_model h))
+  ($ chosen (decide_capacity h))
+  (= total_error (+ total_error (!abs (- expected chosen))))
+  (= h (+ h 1)))
+
+($ peak_hour 8)
+($ peak_capacity (decide_capacity peak_hour))
+
+(!p "Webhook Load Decision Demo")
+(!p "rows:" 1854445)
+(!p "peak_hour:" peak_hour)
+(!p "peak_hour_webhooks:" (I hourly_counts peak_hour))
+(!p "recommended_capacity:" peak_capacity)
+(!p "total_error_vs_observed_pattern:" total_error)
+(!p "strategies: exact_count vs compact_rule vs naive_daytime")
