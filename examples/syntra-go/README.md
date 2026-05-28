@@ -7,15 +7,15 @@ Apache-2.0. No external dependencies — stdlib only.
 ## Install
 
 ```
-go get github.com/sectorops/syntra-go
+go get github.com/ashhart/syntra-go
 ```
 
 ## Quickstart
 
 ```go
 import (
-    syntra "github.com/sectorops/syntra-go"
-    "github.com/sectorops/syntra-go/retry"
+    syntra "github.com/ashhart/syntra-go"
+    "github.com/ashhart/syntra-go/retry"
 )
 
 client := retry.NewRetryClient(retry.ClientOptions{

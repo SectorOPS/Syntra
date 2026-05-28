@@ -1,5 +1,5 @@
-// Copyright 2024 SectorOPS. Apache-2.0.
-package com.sectorops.syntra;
+// Copyright 2024 Ash Hart. Apache-2.0.
+package com.ashhart.syntra;
 
 import java.util.OptionalDouble;
 

@@ -8,8 +8,8 @@ fallback semantics.
 
 | Language | Repository path | Module |
 |----------|-----------------|--------|
-| Go       | [`examples/syntra-go/`](https://github.com/ashhart/Syntra/tree/main/examples/syntra-go) | `github.com/sectorops/syntra-go` |
-| Node     | [`examples/syntra-node/`](https://github.com/ashhart/Syntra/tree/main/examples/syntra-node) | `@sectorops/syntra` (TypeScript) |
+| Go       | [`examples/syntra-go/`](https://github.com/ashhart/Syntra/tree/main/examples/syntra-go) | `github.com/ashhart/syntra-go` |
+| Node     | [`examples/syntra-node/`](https://github.com/ashhart/Syntra/tree/main/examples/syntra-node) | `@ashhart/syntra-client` (TypeScript) |
 | Java     | [`examples/syntra-java/`](https://github.com/ashhart/Syntra/tree/main/examples/syntra-java) | Maven |
 | Rust     | [`examples/syntra-rs/`](https://github.com/ashhart/Syntra/tree/main/examples/syntra-rs) | `syntra` |
 
@@ -38,8 +38,8 @@ HTTP client, the error handling idioms, and the package conventions.
 
 ```go
 import (
-    syntra "github.com/sectorops/syntra-go"
-    "github.com/sectorops/syntra-go/retry"
+    syntra "github.com/ashhart/syntra-go"
+    "github.com/ashhart/syntra-go/retry"
 )
 
 client := retry.NewRetryClient(retry.ClientOptions{

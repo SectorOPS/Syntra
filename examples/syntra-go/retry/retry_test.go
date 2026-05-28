@@ -1,4 +1,4 @@
-// Copyright 2024 SectorOPS. Apache-2.0.
+// Copyright 2024 Ash Hart. Apache-2.0.
 
 package retry
 
@@ -15,7 +15,7 @@ import (
 	"testing"
 	"time"
 
-	syntra "github.com/sectorops/syntra-go"
+	syntra "github.com/ashhart/syntra-go"
 )
 
 // --- helpers -----------------------------------------------------------------

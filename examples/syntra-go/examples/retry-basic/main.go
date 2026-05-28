@@ -1,4 +1,4 @@
-// Copyright 2024 SectorOPS. Apache-2.0.
+// Copyright 2024 Ash Hart. Apache-2.0.
 
 // retry-basic demonstrates the syntra-go retry client in minimal usage.
 // Point SYNTRA_URL, SYNTRA_ADMIN_KEY, and SYNTRA_CAPSULE_PATH at a running
@@ -13,8 +13,8 @@ import (
 	"os"
 	"time"
 
-	syntra "github.com/sectorops/syntra-go"
-	"github.com/sectorops/syntra-go/retry"
+	syntra "github.com/ashhart/syntra-go"
+	"github.com/ashhart/syntra-go/retry"
 )
 
 func main() {

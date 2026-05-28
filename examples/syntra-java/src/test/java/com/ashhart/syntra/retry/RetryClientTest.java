@@ -1,5 +1,5 @@
-// Copyright 2024 SectorOPS. Apache-2.0.
-package com.sectorops.syntra.retry;
+// Copyright 2024 Ash Hart. Apache-2.0.
+package com.ashhart.syntra.retry;
 
 import com.sun.net.httpserver.HttpServer;
 import com.sun.net.httpserver.HttpHandler;

@@ -1,4 +1,4 @@
-// Copyright 2024 SectorOPS. Apache-2.0.
+// Copyright 2024 Ash Hart. Apache-2.0.
 
 // Package retry provides a Syntra-driven HTTP retry client.
 //
@@ -22,7 +22,7 @@ import (
 	"sync"
 	"time"
 
-	syntra "github.com/sectorops/syntra-go"
+	syntra "github.com/ashhart/syntra-go"
 )
 
 // Policy names match the demo capsule YAML options list.

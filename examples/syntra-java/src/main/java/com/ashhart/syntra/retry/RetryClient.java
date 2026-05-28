@@ -1,8 +1,8 @@
-// Copyright 2024 SectorOPS. Apache-2.0.
-package com.sectorops.syntra.retry;
+// Copyright 2024 Ash Hart. Apache-2.0.
+package com.ashhart.syntra.retry;
 
-import com.sectorops.syntra.Decision;
-import com.sectorops.syntra.SyntraClient;
+import com.ashhart.syntra.Decision;
+import com.ashhart.syntra.SyntraClient;
 
 import java.io.IOException;
 import java.net.URI;

@@ -179,7 +179,7 @@ command, not five.
 ### Changed
 
 - **`Syntra/README.md` Quickstart rewritten** to lead with a single
-  `docker run -d` block against `ghcr.io/sectorops/syntra:demo`,
+  `docker run -d` block against `ghcr.io/ashhart/syntra:demo`,
   followed by the Dashboard / API URLs, a five-capsule bullet list
   (Predictive autoscaling, Anomaly-aware API routing, Seasonal fraud
   threshold, Shared-state action embeddings, Hierarchical region
@@ -245,7 +245,7 @@ command, not five.
 
 ### Caveats
 
-- `ghcr.io/sectorops/syntra:demo` is still not pullable from
+- `ghcr.io/ashhart/syntra:demo` is still not pullable from
   GHCR — the workflow added in followup 22 only fires on push to
   `main`, and the repo state where the workflow lives hasn't been
   pushed. The README's Quickstart docker run command will fail
@@ -265,14 +265,14 @@ were uncovered, scoped, and filed for a future round.
 
 - **GitHub Actions workflow `publish-demo-image.yml`** at
   monorepo `.github/workflows/`. Builds and pushes
-  `ghcr.io/sectorops/syntra:demo` (moving tag) and
-  `ghcr.io/sectorops/syntra:demo-<sha>` (immutable per-commit tag)
+  `ghcr.io/ashhart/syntra:demo` (moving tag) and
+  `ghcr.io/ashhart/syntra:demo-<sha>` (immutable per-commit tag)
   on push to `main`, on release publish, and on manual dispatch.
   Multi-arch (`linux/amd64`, `linux/arm64`). Uses `GITHUB_TOKEN`
   with `packages: write`. Lives at the monorepo level (not in
   `Syntra/.github`) because `Dockerfile.demo`'s build context spans
   both `Lycan/` and `Syntra/`. The Quickstart's Step 1 is rewritten
-  to `docker run ghcr.io/sectorops/syntra:demo` as primary, with
+  to `docker run ghcr.io/ashhart/syntra:demo` as primary, with
   build-from-source kept as an alternative for offline / dev use.
 
 - **`syntra status` and `syntra stop` subcommands** in
@@ -434,7 +434,7 @@ documentation.
   not Lycan. `helm lint` still passes.
 
 - **try-instance image** (`Syntra/deploy/try-instance/`) switched
-  from `FROM ghcr.io/sectorops/syntra:demo` (an image that has not
+  from `FROM ghcr.io/ashhart/syntra:demo` (an image that has not
   yet been published) to a **multi-stage build from source**,
   cloned from `Syntra/docker/Dockerfile.demo`. No external image
   dependency; the build is fully self-contained.
@@ -461,7 +461,7 @@ documentation.
 - **Tutorial site quickstart** (`Syntra/docs/site/docs/quickstart.md`)
   rewritten Step 1 + Step 2:
   - Step 1 no longer points at the unpublished
-    `ghcr.io/sectorops/syntra:demo`. Instructs `git clone` +
+    `ghcr.io/ashhart/syntra:demo`. Instructs `git clone` +
     `docker build -t syntra:demo -f Syntra/docker/Dockerfile.demo .`
     (the same path the try-instance now uses).
   - Step 2 no longer claims the admin key is the literal string
@@ -477,18 +477,18 @@ documentation.
 `mkdocs build --strict` produces 28 HTML pages (was 25). Total word
 count of the new content: ~2,100 words.
 
-- [`reference/cookbook/wiring-delayed-feedback.md`](https://github.com/SectorOPS/Syntra/blob/main/docs/site/docs/reference/cookbook/wiring-delayed-feedback.md)
+- [`reference/cookbook/wiring-delayed-feedback.md`](https://github.com/ashhart/Syntra/blob/main/docs/site/docs/reference/cookbook/wiring-delayed-feedback.md)
   — the `decisionId` persistence pattern for outcomes that resolve
   hours or days after a decision. Covers the round-trip pattern,
   storage and drift caveats, and partial / interim feedback.
 
-- [`reference/operations/debugging-refusals.md`](https://github.com/SectorOPS/Syntra/blob/main/docs/site/docs/reference/operations/debugging-refusals.md)
+- [`reference/operations/debugging-refusals.md`](https://github.com/ashhart/Syntra/blob/main/docs/site/docs/reference/operations/debugging-refusals.md)
   — when `/decide` returns `refused: true`, the three possible
   `refusalReason` values (`ood`, `interval_too_wide`,
   `insufficient_calibration_data`), what each one means, how to
   diagnose via `/memory`, and which `learning.json` knob to nudge.
 
-- [`reference/migration/from-static-rules.md`](https://github.com/SectorOPS/Syntra/blob/main/docs/site/docs/reference/migration/from-static-rules.md)
+- [`reference/migration/from-static-rules.md`](https://github.com/ashhart/Syntra/blob/main/docs/site/docs/reference/migration/from-static-rules.md)
   — full before/after walkthrough for replacing hand-tuned
   `if/elif` rule blocks: capsule YAML, integration code in Python,
   failure modes (cold start, reward noise, fallback path).
@@ -507,7 +507,7 @@ to the new operations page.
   emerged for the three filled pages (real worked example, three
   failure modes, cross-link to related pages) is the template for
   future content.
-- Publishing `ghcr.io/sectorops/syntra:demo` to a public registry.
+- Publishing `ghcr.io/ashhart/syntra:demo` to a public registry.
   Until that happens, both the Quickstart and the try-instance
   artifact build from source. When the image is published, the
   Quickstart Step 1 can swap the build for a `docker pull`.
@@ -1745,7 +1745,7 @@ framing left buried under bandit-only positioning.
   surfaced in the README. Bandit-core details, lifecycle, refusal, and
   drift sections are preserved and demoted to "How the learning layer
   works". `/decide` and `/feedback` API examples are unchanged.
-- **Top-level `README.md`** — SectorOPS pointer updated to describe
+- **Top-level `README.md`** — Ash Hart pointer updated to describe
   Syntra in operational-intelligence terms, with a pointer to
   `Syntra/POSITIONING.md` for the full statement.
 
@@ -1988,7 +1988,7 @@ Python integration example land alongside.
   was masked before because memory wasn't persisted from decide; the new
   persistence above exposed it.
 - **Docker demo image** is local-build only at the moment — the published
-  `ghcr.io/sectorops/syntra:*` tags promised in earlier docs do not exist
+  `ghcr.io/ashhart/syntra:*` tags promised in earlier docs do not exist
   yet and references to them have been removed.
 
 ### Internal
