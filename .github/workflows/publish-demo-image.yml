@@ -1,6 +1,6 @@
 name: Publish demo image
 
-# Publishes the Syntra demo image at ghcr.io/sectorops/syntra:demo so the
+# Publishes the Syntra demo image at ghcr.io/ashhart/syntra:demo so the
 # Quickstart's `docker run` story works without a from-source build.
 #
 # The Syntra repo is self-contained: Lycan/ ships as a subdirectory of
@@ -9,8 +9,8 @@ name: Publish demo image
 # dependency on any other repo at build time.
 #
 # Tags emitted per run:
-#   ghcr.io/sectorops/syntra:demo          — moving tag, latest demo build
-#   ghcr.io/sectorops/syntra:demo-<sha>    — immutable, ties an image to a commit
+#   ghcr.io/ashhart/syntra:demo          — moving tag, latest demo build
+#   ghcr.io/ashhart/syntra:demo-<sha>    — immutable, ties an image to a commit
 
 on:
   push:
@@ -43,7 +43,7 @@ concurrency:
 
 jobs:
   publish:
-    name: Build and push ghcr.io/sectorops/syntra:demo
+    name: Build and push ghcr.io/${{ github.repository_owner }}/syntra:demo
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

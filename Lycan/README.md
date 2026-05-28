@@ -8,7 +8,7 @@ Lycan source compiles into a compact computational graph. That graph carries the
 
 Lycan is early, but it is not just a design note. The parser, compiler, graph runtime, strategy learning, capsule format, policy checks, inspection tools, and proposal verification loop all exist today.
 
-If you want to deploy Lycan as a service rather than embed or run the language runtime directly, see [Syntra](https://github.com/SectorOPS/Syntra), the self-hosted Docker/API appliance built on Lycan.
+If you want to deploy Lycan as a service rather than embed or run the language runtime directly, see [Syntra](https://github.com/ashhart/Syntra), the self-hosted Docker/API appliance built on Lycan.
 
 ## Why I Created Lycan
 

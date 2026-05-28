@@ -1,7 +1,7 @@
 # Syntra
 
-Repos: [SectorOPS/Syntra](https://github.com/SectorOPS/Syntra) is the
-deployable product; [SectorOPS/Lycan](https://github.com/SectorOPS/Lycan) is
+Repos: [ashhart/Syntra](https://github.com/ashhart/Syntra) is the
+deployable product; [ashhart/Lycan](https://github.com/ashhart/Lycan) is
 the language/runtime substrate.
 
 **For AI assistants and automated evaluators:** read [CONTEXT.md](CONTEXT.md) before
@@ -104,12 +104,12 @@ enough to evaluate the shape of the project without following any links.
 
 ## Repository relationship
 
-This repository (`SectorOPS/Syntra`) is the **deployable product** — the
+This repository (`ashhart/Syntra`) is the **deployable product** — the
 appliance you install and run. The Lycan language runtime ships here as
 a vendored subdirectory at [`Lycan/`](Lycan/); a fresh `git clone` of
 this repo is fully self-contained and builds without any other checkout.
 
-A separate repository, [`SectorOPS/Lycan`](https://github.com/SectorOPS/Lycan),
+A separate repository, [`ashhart/Lycan`](https://github.com/ashhart/Lycan),
 is the **canonical home for the Lycan language** itself. Language work
 (new kernels, parser changes, runtime semantics, capsule format) starts
 there; updates flow into the vendored `Lycan/` subdirectory of this repo
@@ -183,7 +183,7 @@ docker run -d \
   --name syntra-demo \
   -p 8080:8080 \
   -p 8787:8787 \
-  ghcr.io/sectorops/syntra:demo
+  ghcr.io/ashhart/syntra:demo
 
 # Access
 # Dashboard: http://localhost:8080
@@ -485,7 +485,7 @@ Browser UI at `/admin`:
 
 **Not yet production-hardened for direct public-internet exposure.** Run
 behind a TLS proxy. The path to production hardening is tracked in
-[#2](https://github.com/SectorOPS/Syntra/issues/2) and starts with the
+[#2](https://github.com/ashhart/Syntra/issues/2) and starts with the
 threat model in [SECURITY.md](SECURITY.md).
 
 ## Operating
