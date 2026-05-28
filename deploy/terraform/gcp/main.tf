@@ -115,7 +115,7 @@ resource "google_cloud_run_v2_service" "this" {
     }
 
     containers {
-      image = "ghcr.io/sectorops/syntra:${var.image_tag}"
+      image = "ghcr.io/ashhart/syntra:${var.image_tag}"
 
       ports {
         // Cloud Run accepts one container port. 8787 matches Syntra's

@@ -322,7 +322,7 @@ resource "aws_ecs_task_definition" "this" {
   container_definitions = jsonencode([
     {
       name      = "syntra"
-      image     = "ghcr.io/sectorops/syntra:${var.image_tag}"
+      image     = "ghcr.io/ashhart/syntra:${var.image_tag}"
       essential = true
 
       portMappings = [

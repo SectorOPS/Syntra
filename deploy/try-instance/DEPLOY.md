@@ -69,7 +69,7 @@ tree:
 # access token).
 mkdir -p /opt
 cd /opt
-git clone https://github.com/SectorOPS/Syntra.git syntra-try
+git clone https://github.com/ashhart/Syntra.git syntra-try
 # If the repo's name on GitHub differs, adjust above.
 
 # Option B: rsync from your laptop (recommended if private).

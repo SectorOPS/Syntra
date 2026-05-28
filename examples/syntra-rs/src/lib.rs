@@ -1,6 +1,6 @@
 // Copyright 2026 SectorOPS. Apache-2.0.
 
-//! Rust client for [Syntra](https://github.com/SectorOPS/Syntra), a
+//! Rust client for [Syntra](https://github.com/ashhart/Syntra), a
 //! self-hosted contextual-bandit appliance.
 //!
 //! The crate exposes two layers:

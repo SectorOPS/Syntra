@@ -22,5 +22,5 @@ Read them in order on a first pass, dip into them as reference after.
 
 If you want the underlying theory — what a contextual bandit is, why
 delayed feedback matters, when this framing fits and when it does not
-— the [contextual bandits in honest terms](https://github.com/SectorOPS/Syntra/blob/main/docs/concepts.md)
+— the [contextual bandits in honest terms](https://github.com/ashhart/Syntra/blob/main/docs/concepts.md)
 doc in the repository is the long-form treatment.

@@ -97,7 +97,7 @@ manifest, one README.
 docker run -d --name syntra -p 8787:8787 \
   -v $PWD/syntra-store:/store \
   -e SYNTRA_ADMIN_KEY=$ADMIN \
-  ghcr.io/sectorops/syntra:demo
+  ghcr.io/ashhart/syntra:demo
 
 # 2. Compile and install a capsule.
 lycan compile examples/predictive-autoscaling/program.lycs
@@ -159,4 +159,4 @@ rate limit, Prometheus `/metrics`, `/ready` store-writability probe,
 JSON structured logging, backup/restore as JSON bundles. Run behind a
 TLS proxy.
 
-`https://github.com/SectorOPS/Syntra` · `Apache-2.0`
+`https://github.com/ashhart/Syntra` · `Apache-2.0`

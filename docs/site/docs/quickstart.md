@@ -24,12 +24,12 @@ Pull and run the published demo image:
 docker run --rm \
   -p 8787:8787 \
   -p 8080:8080 \
-  ghcr.io/sectorops/syntra:demo
+  ghcr.io/ashhart/syntra:demo
 ```
 
 The image is built and pushed by `.github/workflows/publish-demo-image.yml`
 on each push to `main` (multi-arch: `linux/amd64`, `linux/arm64`). An
-immutable per-commit tag `ghcr.io/sectorops/syntra:demo-<sha>` is
+immutable per-commit tag `ghcr.io/ashhart/syntra:demo-<sha>` is
 published alongside the moving `:demo` tag if you need to pin.
 
 ### Alternative: build from source
@@ -38,7 +38,7 @@ For offline use, behind-the-firewall environments, or local development
 against an in-flight commit:
 
 ```bash
-git clone https://github.com/SectorOPS/Syntra.git
+git clone https://github.com/ashhart/Syntra.git
 cd Syntra
 docker build -t syntra:demo -f Syntra/docker/Dockerfile.demo .
 
@@ -98,7 +98,7 @@ all working together.
 
 ```bash
 # Assuming you have a Syntra checkout. If not, clone it first:
-# git clone https://github.com/SectorOPS/Syntra.git && cd Syntra
+# git clone https://github.com/ashhart/Syntra.git && cd Syntra
 cd examples/predictive-autoscaling
 
 # Install the compiled .lyc graph.

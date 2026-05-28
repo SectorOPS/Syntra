@@ -8,10 +8,10 @@ fallback semantics.
 
 | Language | Repository path | Module |
 |----------|-----------------|--------|
-| Go       | [`examples/syntra-go/`](https://github.com/SectorOPS/Syntra/tree/main/examples/syntra-go) | `github.com/sectorops/syntra-go` |
-| Node     | [`examples/syntra-node/`](https://github.com/SectorOPS/Syntra/tree/main/examples/syntra-node) | `@sectorops/syntra` (TypeScript) |
-| Java     | [`examples/syntra-java/`](https://github.com/SectorOPS/Syntra/tree/main/examples/syntra-java) | Maven |
-| Rust     | [`examples/syntra-rs/`](https://github.com/SectorOPS/Syntra/tree/main/examples/syntra-rs) | `syntra` |
+| Go       | [`examples/syntra-go/`](https://github.com/ashhart/Syntra/tree/main/examples/syntra-go) | `github.com/sectorops/syntra-go` |
+| Node     | [`examples/syntra-node/`](https://github.com/ashhart/Syntra/tree/main/examples/syntra-node) | `@sectorops/syntra` (TypeScript) |
+| Java     | [`examples/syntra-java/`](https://github.com/ashhart/Syntra/tree/main/examples/syntra-java) | Maven |
+| Rust     | [`examples/syntra-rs/`](https://github.com/ashhart/Syntra/tree/main/examples/syntra-rs) | `syntra` |
 
 The Python pack is [`examples/retry-tuning/`](retry-tuning.md), the
 canonical one. The other four mirror its public surface and its
@@ -56,24 +56,24 @@ resp, err := client.Do(req)
 ```
 
 No external dependencies — stdlib only. See
-[`examples/syntra-go/README.md`](https://github.com/SectorOPS/Syntra/blob/main/examples/syntra-go/README.md)
+[`examples/syntra-go/README.md`](https://github.com/ashhart/Syntra/blob/main/examples/syntra-go/README.md)
 for the full surface.
 
 ## Node (TypeScript)
 
 The Node client ships TypeScript types, runs on Node ≥ 18 (uses
 native `fetch`), and mirrors the Python pattern. See
-[`examples/syntra-node/README.md`](https://github.com/SectorOPS/Syntra/blob/main/examples/syntra-node/README.md).
+[`examples/syntra-node/README.md`](https://github.com/ashhart/Syntra/blob/main/examples/syntra-node/README.md).
 
 ## Java
 
 Maven artifact, mirrors `RetryClient`. See
-[`examples/syntra-java/README.md`](https://github.com/SectorOPS/Syntra/blob/main/examples/syntra-java/README.md).
+[`examples/syntra-java/README.md`](https://github.com/ashhart/Syntra/blob/main/examples/syntra-java/README.md).
 
 ## Rust
 
 Cargo crate, async + sync APIs. See
-[`examples/syntra-rs/README.md`](https://github.com/SectorOPS/Syntra/blob/main/examples/syntra-rs/README.md).
+[`examples/syntra-rs/README.md`](https://github.com/ashhart/Syntra/blob/main/examples/syntra-rs/README.md).
 
 ## Fail-safe semantics across all four
 

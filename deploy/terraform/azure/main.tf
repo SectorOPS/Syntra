@@ -146,7 +146,7 @@ resource "azurerm_container_app" "this" {
 
     container {
       name   = "syntra"
-      image  = "ghcr.io/sectorops/syntra:${var.image_tag}"
+      image  = "ghcr.io/ashhart/syntra:${var.image_tag}"
       cpu    = 0.5
       memory = "1Gi"
 

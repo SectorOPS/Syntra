@@ -12,7 +12,7 @@ choice under which context.
 This is one of three demos that show the *operational kernels* Lycan
 ships — `stats.mean`, `stats.stdDev` — feeding directly into the
 adaptive choice Syntra exposes over HTTP. The repository copy lives
-at [`examples/anomaly-routing/`](https://github.com/SectorOPS/Syntra/tree/main/examples/anomaly-routing).
+at [`examples/anomaly-routing/`](https://github.com/ashhart/Syntra/tree/main/examples/anomaly-routing).
 
 ## Files
 

@@ -6,7 +6,7 @@ volume for persistent state.
 
 ## What it builds
 
-- 1 ECS cluster, 1 service, 1 task running `ghcr.io/sectorops/syntra:<tag>`
+- 1 ECS cluster, 1 service, 1 task running `ghcr.io/ashhart/syntra:<tag>`
 - 1 EFS file system + access point mounted at `/store` inside the container
 - 1 ALB on 443 (TLS) + 80 (redirect)
 - 1 ACM certificate, DNS-validated via Route53 (only if `domain_name` is set)

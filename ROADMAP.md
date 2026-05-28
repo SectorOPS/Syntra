@@ -10,7 +10,7 @@ Status: MVP landed.
 - Keep optional generated `.lycs` source for inspection.
 - Turn options and context keys into executable capsule behaviour.
 - Preserve declared reward weights in generated source; automatic weighted reward computation is next.
-- Expand this into richer JSON/YAML capsule authoring in [#1](https://github.com/SectorOPS/Syntra/issues/1).
+- Expand this into richer JSON/YAML capsule authoring in [#1](https://github.com/ashhart/Syntra/issues/1).
 
 ## 0.3 - Hero Demo Contract
 
@@ -33,7 +33,7 @@ Status: planned.
 
 Status: planned.
 
-- Complete the threat model and production-hardening track in [#2](https://github.com/SectorOPS/Syntra/issues/2).
+- Complete the threat model and production-hardening track in [#2](https://github.com/ashhart/Syntra/issues/2).
 - Review admin console security posture.
 - Decide the multi-key/user model.
 - Document deployment expectations for TLS, retention, backups, and log redaction.

@@ -2,7 +2,7 @@
 
 Adaptive backend queue selection driven by a Syntra capsule.
 
-Repository copy: [`examples/queue-selection/`](https://github.com/SectorOPS/Syntra/tree/main/examples/queue-selection).
+Repository copy: [`examples/queue-selection/`](https://github.com/ashhart/Syntra/tree/main/examples/queue-selection).
 
 ## What it does
 

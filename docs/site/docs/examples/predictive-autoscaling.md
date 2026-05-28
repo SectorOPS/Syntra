@@ -13,7 +13,7 @@ This is one of three demos that show the *operational kernels* Lycan
 ships — `series.ewmaForecast`, `stats.percentile`,
 `ops.autoScaleRecommend` — feeding directly into the adaptive choice
 Syntra exposes over HTTP. The repository copy lives at
-[`examples/predictive-autoscaling/`](https://github.com/SectorOPS/Syntra/tree/main/examples/predictive-autoscaling).
+[`examples/predictive-autoscaling/`](https://github.com/ashhart/Syntra/tree/main/examples/predictive-autoscaling).
 
 ## Files
 

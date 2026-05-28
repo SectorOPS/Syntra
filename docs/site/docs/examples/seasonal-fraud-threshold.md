@@ -12,7 +12,7 @@ window, disputes on longer ones — and is posted to `/feedback` once
 it does. That delayed outcome is the only learning signal the capsule
 needs, and it is exactly the shape of feedback Syntra is built for.
 
-Repository copy: [`examples/seasonal-fraud-threshold/`](https://github.com/SectorOPS/Syntra/tree/main/examples/seasonal-fraud-threshold).
+Repository copy: [`examples/seasonal-fraud-threshold/`](https://github.com/ashhart/Syntra/tree/main/examples/seasonal-fraud-threshold).
 
 ## Files
 

@@ -81,7 +81,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    repoURL: https://github.com/SectorOPS/Syntra
+    repoURL: https://github.com/ashhart/Syntra
     path: deploy/helm/syntra
     targetRevision: main
     helm:
@@ -227,7 +227,7 @@ The high-traffic knobs:
 
 | Value | Default | Purpose |
 | --- | --- | --- |
-| `image.repository` | `ghcr.io/sectorops/syntra` | Image repo. |
+| `image.repository` | `ghcr.io/ashhart/syntra` | Image repo. |
 | `image.tag` | `demo` | Image version. Pin to a real release for prod. |
 | `syntra.adminToken` | `""` | Required unless `existingSecret` set. |
 | `syntra.port` | `8787` | Container HTTP port. |

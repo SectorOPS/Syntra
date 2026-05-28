@@ -31,7 +31,7 @@ Syntra is a self-hosted adaptive decision appliance. It is designed to run insid
 - Decision logs can contain application-provided input fields.
 - Public internet hardening requires external security review.
 
-The 1.0 security-hardening track is maintained in [#2](https://github.com/SectorOPS/Syntra/issues/2).
+The 1.0 security-hardening track is maintained in [#2](https://github.com/ashhart/Syntra/issues/2).
 
 ## Reporting
 

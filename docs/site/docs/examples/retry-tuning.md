@@ -4,7 +4,7 @@ Adaptive HTTP retry policy selection driven by a Syntra capsule. The
 canonical Python integration pattern — every other domain pack
 (`fraud-tuning`, `llm-routing`, `queue-selection`) mirrors this shape.
 
-Repository copy: [`examples/retry-tuning/`](https://github.com/SectorOPS/Syntra/tree/main/examples/retry-tuning).
+Repository copy: [`examples/retry-tuning/`](https://github.com/ashhart/Syntra/tree/main/examples/retry-tuning).
 
 ## What it does
 

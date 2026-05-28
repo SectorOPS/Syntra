@@ -13,7 +13,7 @@ variable "resource_group_name" {
 }
 
 variable "image_tag" {
-  description = "Tag of ghcr.io/sectorops/syntra to deploy."
+  description = "Tag of ghcr.io/ashhart/syntra to deploy."
   type        = string
   default     = "demo"
 }

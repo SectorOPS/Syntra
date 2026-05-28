@@ -36,7 +36,7 @@ replicaCount: 1
 # ─────────────────────────────────────────────────────────────────────
 image:
   # Image repository. Must include the registry host.
-  repository: ghcr.io/sectorops/syntra
+  repository: ghcr.io/ashhart/syntra
   # Tag pinned per release. AVOID `latest` in production — capsule
   # memory schema (currently v7) is forward-only; a surprise upgrade
   # mid-deploy will not corrupt state, but it will silently re-warmup

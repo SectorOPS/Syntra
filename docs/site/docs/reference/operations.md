@@ -17,8 +17,8 @@ of them isn't.
 
     The topics listed below are planned but unwritten. Until each is
     filled in, the closest existing material is the
-    [`docs/operating.md`](https://github.com/SectorOPS/Syntra/blob/main/docs/operating.md)
-    and [`docs/deployment.md`](https://github.com/SectorOPS/Syntra/blob/main/docs/deployment.md)
+    [`docs/operating.md`](https://github.com/ashhart/Syntra/blob/main/docs/operating.md)
+    and [`docs/deployment.md`](https://github.com/ashhart/Syntra/blob/main/docs/deployment.md)
     files in the repository.
 
 ### Monitoring
@@ -114,5 +114,5 @@ The short version of the debugging runbook:
 
 This is enough to disambiguate most "the bandit isn't learning what I
 expected" reports. The repo-side
-[`docs/operating.md`](https://github.com/SectorOPS/Syntra/blob/main/docs/operating.md)
+[`docs/operating.md`](https://github.com/ashhart/Syntra/blob/main/docs/operating.md)
 has the long version.

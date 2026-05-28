@@ -3,7 +3,7 @@
 Adaptive fraud-blocking threshold selection driven by a Syntra
 capsule.
 
-Repository copy: [`examples/fraud-tuning/`](https://github.com/SectorOPS/Syntra/tree/main/examples/fraud-tuning).
+Repository copy: [`examples/fraud-tuning/`](https://github.com/ashhart/Syntra/tree/main/examples/fraud-tuning).
 
 ## What it does
 

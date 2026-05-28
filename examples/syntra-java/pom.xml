@@ -12,7 +12,7 @@
 
   <name>syntra-client</name>
   <description>Java client for the Syntra adaptive decision appliance.</description>
-  <url>https://github.com/SectorOPS/Syntra</url>
+  <url>https://github.com/ashhart/Syntra</url>
 
   <licenses>
     <license>

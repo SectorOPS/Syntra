@@ -18,13 +18,13 @@ appVersion: "0.2.0"
 
 kubeVersion: ">=1.24.0-0"
 
-home: https://github.com/SectorOPS/Syntra
+home: https://github.com/ashhart/Syntra
 sources:
-  - https://github.com/SectorOPS/Syntra
+  - https://github.com/ashhart/Syntra
 
 maintainers:
   - name: Syntra maintainers
-    url: https://github.com/SectorOPS
+    url: https://github.com/ashhart
 
 keywords:
   - contextual-bandit

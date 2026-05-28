@@ -13,7 +13,7 @@ hierarchical framing keeps one bandit per non-leaf level: reward
 credit flows along the chosen path so siblings within the same parent
 share information, unlike a flat six-arm bandit.
 
-Repository copy: [`examples/hierarchical-region-routing/`](https://github.com/SectorOPS/Syntra/tree/main/examples/hierarchical-region-routing).
+Repository copy: [`examples/hierarchical-region-routing/`](https://github.com/ashhart/Syntra/tree/main/examples/hierarchical-region-routing).
 
 ## Status
 

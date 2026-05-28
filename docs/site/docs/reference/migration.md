@@ -68,7 +68,7 @@ What you keep: the feature engineering work. Your VW
 namespaced-features can map to Syntra's `contextSpec: features`. The
 IPS / DR machinery that VW exposes for off-policy evaluation has a
 direct analog in
-[`examples/offline-eval/`](https://github.com/SectorOPS/Syntra/tree/main/examples/offline-eval).
+[`examples/offline-eval/`](https://github.com/ashhart/Syntra/tree/main/examples/offline-eval).
 
 What you give up: the action-dependent features (`--cb_adf`) flavor
 maps to Syntra's [shared-state action embeddings](../examples/shared-state-action-embeddings.md)

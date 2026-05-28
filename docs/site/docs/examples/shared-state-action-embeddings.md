@@ -6,7 +6,7 @@ parameter vector θ over the concatenated `[x_context, x_option]`
 space, so an option whose action features overlap with trained
 options inherits a non-zero prior instead of starting from scratch.
 
-Repository copy: [`examples/shared-state-action-embeddings/`](https://github.com/SectorOPS/Syntra/tree/main/examples/shared-state-action-embeddings).
+Repository copy: [`examples/shared-state-action-embeddings/`](https://github.com/ashhart/Syntra/tree/main/examples/shared-state-action-embeddings).
 
 ## Why this capsule exists
 

@@ -3,7 +3,7 @@
 Adaptive LLM model selection driven by a Syntra contextual-bandit
 capsule.
 
-Repository copy: [`examples/llm-routing/`](https://github.com/SectorOPS/Syntra/tree/main/examples/llm-routing).
+Repository copy: [`examples/llm-routing/`](https://github.com/ashhart/Syntra/tree/main/examples/llm-routing).
 
 ## What it does
 

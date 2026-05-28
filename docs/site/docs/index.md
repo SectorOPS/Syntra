@@ -21,7 +21,7 @@ the outcome resolves.
 
 <div class="syntra-cta" markdown>
 [Try it in 30 minutes](quickstart.md){ .md-button .md-button--primary }
-[Read the pitch](https://github.com/SectorOPS/Syntra/blob/main/PITCH.md){ .md-button }
+[Read the pitch](https://github.com/ashhart/Syntra/blob/main/PITCH.md){ .md-button }
 [Browse the docs](concepts/index.md){ .md-button }
 </div>
 
@@ -98,7 +98,7 @@ manifest, one README.
 docker run -d --name syntra -p 8787:8787 \
   -v $PWD/syntra-store:/store \
   -e SYNTRA_ADMIN_KEY=$ADMIN \
-  ghcr.io/sectorops/syntra:demo
+  ghcr.io/ashhart/syntra:demo
 
 # 2. Compile and install a capsule.
 lycan compile examples/predictive-autoscaling/program.lycs

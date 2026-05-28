@@ -10,7 +10,7 @@ the wrong form is a real authoring bug and is easy to do.
 | Form | Use when |
 |------|----------|
 | `(strategy ...)` | The program is **self-contained** and converges during repeated execution. There is no external feedback loop. The runtime auto-updates weights from execution-time differences across options. Suitable for Lycan-standalone programs where the only learning signal is "which option ran fastest while producing the consensus answer". The strategy-learning demos under `examples/strategy-learning/` are the canonical use case. |
-| `(choice ...)` | An **external runtime owns the feedback loop**. Typical case: a capsule installed in [Syntra](https://github.com/SectorOPS/Syntra), whose `/decide` returns an option and whose `/feedback` carries the reward back. The Lycan executor does *no* auto-updates; weight movement comes entirely from the runtime's feedback path. The Syntra contextual-bandit + meta-bandit stack drives selection. |
+| `(choice ...)` | An **external runtime owns the feedback loop**. Typical case: a capsule installed in [Syntra](https://github.com/ashhart/Syntra), whose `/decide` returns an option and whose `/feedback` carries the reward back. The Lycan executor does *no* auto-updates; weight movement comes entirely from the runtime's feedback path. The Syntra contextual-bandit + meta-bandit stack drives selection. |
 
 **Rule of thumb:** if you can name an external system that posts
 `/feedback` to your program, use `(choice ...)`. If your program is
@@ -20,7 +20,7 @@ The two forms are not interchangeable. `syntra author` emits a
 stderr warning if it encounters `(strategy ...)` in a capsule being
 installed, because that is almost always a bug — a Syntra capsule
 should be using `(choice ...)`. See
-[Syntra/docs/investigations/greedy-lock-2026-05.md](https://github.com/SectorOPS/Syntra/blob/main/docs/investigations/greedy-lock-2026-05.md)
+[Syntra/docs/investigations/greedy-lock-2026-05.md](https://github.com/ashhart/Syntra/blob/main/docs/investigations/greedy-lock-2026-05.md)
 for the bug write-up that prompted this distinction.
 
 ## `(choice ...)` — externally-driven adaptive choice

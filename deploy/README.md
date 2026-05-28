@@ -29,7 +29,7 @@ to manage the cluster and the chart separately, comment out the
 
 ## Image: build your own
 
-The `ghcr.io/sectorops/syntra:*` tags referenced in older docs do not
+The `ghcr.io/ashhart/syntra:*` tags referenced in older docs do not
 exist yet. The chart defaults to `image.repository=syntra`,
 `image.tag=demo` — the tag from `docker build -f Syntra/docker/Dockerfile.demo`.
 

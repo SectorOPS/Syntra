@@ -12,7 +12,7 @@ the demo without Docker.
   the install script are Python. `pip install flask requests`.
 - **Docker** *(optional)* — only needed if you want to build the demo
   image yourself instead of pulling
-  `ghcr.io/sectorops/syntra:demo`.
+  `ghcr.io/ashhart/syntra:demo`.
 
 macOS additionally needs the Xcode command-line tools for the Rust
 linker: `xcode-select --install`.
@@ -20,7 +20,7 @@ linker: `xcode-select --install`.
 ## Clone and Build
 
 ```bash
-git clone https://github.com/SectorOPS/Syntra.git
+git clone https://github.com/ashhart/Syntra.git
 cd Syntra
 cargo build --release            # builds the syntra binary
 cd Lycan && cargo build --release # builds the lycan CLI (compiler + runtime)

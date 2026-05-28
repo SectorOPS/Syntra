@@ -3,7 +3,7 @@
 The full endpoint surface for the Syntra HTTP server. Every endpoint
 below is verified to exist in the source (`Lycan/src/server/`). For the
 platform overview, see the [home page](../index.md); for what shipped
-in each phase, see [`CHANGELOG.md`](https://github.com/SectorOPS/Syntra/blob/main/CHANGELOG.md)
+in each phase, see [`CHANGELOG.md`](https://github.com/ashhart/Syntra/blob/main/CHANGELOG.md)
 in the repository.
 
 Base URL is `http://localhost:8787` by default. All endpoints except
